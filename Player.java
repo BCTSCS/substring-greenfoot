@@ -19,18 +19,16 @@ public class Player {
       return record;
     }
   
-    /*
-     * Returns a substring containing the score from the record
+  /*
+   * Returns a substring containing the score from the record
+   */
+  public String getScore() {
+    /* ----------------------------------- TO DO -----------------------------------
+     * ✅ Use the substring() method to return a substring containing the score from
+     * the instance variable record.
+     * -----------------------------------------------------------------------------
      */
-    public String getScore() {
-      /* ----------------------------------- TO DO -----------------------------------
-       * ✅ Use the substring() method to return a substring containing the score from
-       * the instance variable record.
-       * -----------------------------------------------------------------------------
-       */
-      
-      
-      return "";
-    }
+    int index = record.indexOf("-");
     
-  }
+    return record.substring(index + 2);
+  }  }
