@@ -19,20 +19,17 @@ public class Product {
       return label;
     }
   
-    /*
-     * Returns a substring containing the price from label
+  /*
+   * Returns a substring containing the price from label
+   */
+  public String getPrice() {
+    /* ----------------------------------- TO DO -----------------------------------
+     * ✅ Use the substring() method to return a substring containing the price
+     * from the instance label variable. For example, if the label is "Apple: $9.99",
+     * the method should return "$9.99".
+     * -----------------------------------------------------------------------------
      */
-    public String getPrice() {
-      /* ----------------------------------- TO DO -----------------------------------
-       * ✅ Use the substring() method to return a substring containing the price
-       * from the instance label variable. For example, if the label is "Apple: $9.99",
-       * the method should return "$9.99".
-       * -----------------------------------------------------------------------------
-       */
-    //  int index= label.indexOf("$");
-      int index= label.length()-7;
-  
-      return  label.substring(index);
-    }
-    
-  }
+    int index = label.indexOf("$");
+
+    return label.substring(index);
+  }  }
