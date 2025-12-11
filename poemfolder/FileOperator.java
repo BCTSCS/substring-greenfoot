@@ -11,10 +11,10 @@ public class FileOperator {
     fileReader = new Scanner(myFile);
     }
     catch(IOException e) {
-        System.out.println("File does not exist!")
+        System.out.println("File does not exist!");
     }
     finally {
-        System.out.printlne("Continue...")
+        System.out.println("Continue...");
     }
  }
 
@@ -22,8 +22,12 @@ public class FileOperator {
     ArrayList<String> result = new ArrayList<>();
     createFile(fileName);
     while(fileReader.hasNextLine()){
-        result.add(fileReader.readLine());
+        result.add(fileReader.nextLine());
     }
     return result;
+ }
+
+ public static void main(String[] args) {
+    getStringData("poem");
  }
 }
